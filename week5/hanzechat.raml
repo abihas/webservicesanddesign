@@ -1,0 +1,42 @@
+#%RAML 1.0
+---
+title: Hanze Chat Applicatie
+baseUri: https://api.hanzechat.nl/{version}
+version: v1
+
+/user:
+    post:
+        description: Registreer een nieuwe gebruiker
+    /{id}:
+        uriParameters:
+            id: 
+                type: Integer
+                description: The id of the user. 
+                example: 1234
+        get:
+            description: Check de gegevens van deze gebruiker. Creëer een sessie voor deze gebruiker
+        put:
+            description: Update de gegevens van deze gebruiker
+        delete:
+            description: Verwijder deze gebruiker
+        /post:
+            post:
+                description: Creëer nieuwe post voor deze gebruiker
+        /messages:
+            get:
+                description: Nieuwe berichten voor deze gebruiker ophalen
+
+/rooms:
+    get:
+        description: Ontvang de beschikbare chatrooms
+    /{roomid}:
+        get:
+            description: Ontvang de chats van een specifieke chatroom
+        uriParameters:
+            roomid: 
+                type: Integer
+                description: The id of the chatroom. 
+                example: 1234
+        
+
+

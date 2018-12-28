@@ -1,0 +1,14 @@
+{
+  "ProjectFilePath": "/Users/michaelnieuwenweg/OneDrive - Hanzehogeschool Groningen/ProductLifecycleManagement/WebservicesAndDesign/OpdrachtenWebservicesAndDesign/week1/clients/C#/C#.csproj",
+  "TargetFramework": "netcoreapp2.2",
+  "TagHelpers": [],
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  }
+}

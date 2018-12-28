@@ -1,0 +1,2 @@
+1f. Door een aparte klasse te gebruiken voor de webservice is het duidelijker welke functies beschikbaar gesteld worden via de webservice.
+

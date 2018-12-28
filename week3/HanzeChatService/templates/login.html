@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hanze chat service</title>
+    
+    <!-- OPGAVE 3a: ZORG ERVOOR DAT DE STYLESHEETS GOED WORDEN MEEGESTUURD -->
+    <link href="{{ url_for('static', filename='signin.css') }}" rel="stylesheet"/>
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet"/> 
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <form class="form-signin" method="post" action="{{ url_for('login') }}">
+        <h3>Hanze chat service</h3>
+        <h2 class="form-signin-heading">Aanmelden</h2>
+        <input type="text" name="inputEmail" id="inputEmail" class="form-control" placeholder="Gebruikersnaam of e-mailadres" required autofocus>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Wachtwoord" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> Onthouden op deze computer
+          </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Aanmelden</button>
+      </form>
+
+    </div> <!-- /container -->
+  </body>
+</html>
